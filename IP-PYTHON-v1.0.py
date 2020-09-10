@@ -30,6 +30,11 @@ import re, uuid
 print ("The MAC address: ", end="") 
 print (':'.join(re.findall('..', '%012x' % uuid.getnode())))
 
- import keyboard
+print("-----------------------------------------")
 
-keyboard.sleep("enter")
+print("Press enter to exit the program.")
+
+import keyboard
+
+keyboard.wait("enter")
+
